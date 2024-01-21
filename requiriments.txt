@@ -1,0 +1,4 @@
+requests==2.28.1
+python-dateutil==1.4
+python-dotenv==0.21.0
+mysql-connector-python==8.0.29
