@@ -35,8 +35,6 @@ jobs:
       - name: Build and push Docker image
         id: docker_build
         uses: docker/build-push-action@v2
-        env:
-          IMAGE_NAME: ${{ env.IMAGE_NAME }}
         with:
           push: false
-          tags: ${{ env.IMAGE_NAME }}:latest
+          tags: ${{ secrets.IMAGE_NAME }}:latest
