@@ -18,6 +18,9 @@ services:
 
   example:
     build: .
+    image: $IMAGE_NAME
+    environment:
+      - NAME=$NAME
     volumes:
       - .:/code
     command: "python3 main.py"
